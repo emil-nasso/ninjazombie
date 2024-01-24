@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ninjazombie:
+    image: caddy
+    ports:
+      - 80
+    volumes:
+      - ./public:/var/www/public
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
