@@ -2,31 +2,24 @@
     <head>
         <title>ninjazombie</title>
         <style>
-            html, body
-            {
-                height: 100%;
-                margin:0;
-                padding:0;
-                background-color: black;
+            img {
+                width: 350px;
             }
-
-            div {
-                position:relative;
-                height: 100%;
-                width:100%;
-            }
-
-            div img {
-                position:absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
+            table {
                 margin:auto;
             }
         </style>
     </head>
-    <body onload="document.getElementById('img').src = '/images/ninjazombie' + Math.floor(Math.random() * 4 + 1) + '.jpg'">
-        <div><img id="img"/></div>
+    <body>
+        <table>
+            <tr>
+                <td><img src="/images/ninjazombie1.jpg"/></td>
+                <td><img src="/images/ninjazombie2.jpg"/></td>
+            </tr>
+            <tr>
+                <td><img src="/images/ninjazombie3.jpg"/></td>
+                <td><img src="/images/ninjazombie4.jpg"/></td>
+            </tr>
+        </table>
     </body>
 </html>
